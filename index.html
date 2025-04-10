@@ -7,10 +7,13 @@
   <title>MirrorOS</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --accent: #10B981; /* soft green for ethical, calm vibes */
+    }
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: #F9FAFB;
+      background: linear-gradient(to bottom, #FFFFFF, #F3F4F6);
       color: #111827;
       display: flex;
       flex-direction: column;
@@ -23,18 +26,25 @@
       text-align: center;
     }
     h1 {
-      font-size: 2.5rem;
+      font-size: 2.75rem;
       font-weight: 700;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
+      color: var(--accent);
     }
     p.subhead {
       font-size: 1.25rem;
       font-weight: 400;
       margin-bottom: 2rem;
+      color: #4B5563;
     }
     form {
       max-width: 500px;
       margin: 0 auto 2rem;
+      background-color: #FFFFFF;
+      padding: 2rem;
+      border-radius: 0.75rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      border-top: 4px solid var(--accent);
     }
     input[type="email"] {
       width: 100%;
@@ -45,21 +55,23 @@
       border-radius: 0.375rem;
     }
     button {
-      background-color: #2563EB;
+      background-color: var(--accent);
       color: white;
       border: none;
       padding: 0.75rem 1.5rem;
       font-size: 1rem;
       border-radius: 0.375rem;
       cursor: pointer;
+      transition: background-color 0.2s ease;
     }
     button:hover {
-      background-color: #1E40AF;
+      background-color: #059669;
     }
     .about {
-      font-size: 1rem;
+      font-size: 1.05rem;
       color: #374151;
       margin-bottom: 2rem;
+      line-height: 1.6;
     }
     footer {
       font-size: 0.875rem;
@@ -67,6 +79,7 @@
       color: #6B7280;
       margin-top: auto;
       padding: 2rem 1rem;
+      background-color: #F3F4F6;
     }
     footer small {
       display: block;
@@ -75,7 +88,7 @@
       font-size: 0.75rem;
     }
     a {
-      color: #1D4ED8;
+      color: var(--accent);
       text-decoration: none;
     }
     a:hover {
@@ -92,12 +105,12 @@
       <button type="submit">Join the Waitlist</button>
     </form>
     <div class="about">
-      <p>MirrorOS helps intentional teams integrate ethical reflection into their AI and digital workflows. We build tools that make values visible, decisions accountable, and development more human. Currently in early development.</p>
+      <p>MirrorOS helps intentional teams integrate ethical reflection into their AI and digital workflows. We build tools that reflect shared values, support meaningful accountability, and help create technology that respects the humans it touches.</p>
     </div>
   </div>
   <footer>
     © 2025 MirrorOS &nbsp; | &nbsp; <a href="mailto:hello@getmirroros.com">hello@getmirroros.com</a><br>
-    <small>Ethics in action: tools don’t build values. People do.</small>
+    <small>Ethically designed for a human-centered future.</small>
   </footer>
 </body>
 </html>
